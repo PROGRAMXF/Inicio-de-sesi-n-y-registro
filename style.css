@@ -1,0 +1,59 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 'Roboto', sans-serif;
+}
+body{
+    height: 100vh;/*vh (altura del dispositivo)son unidades relativas a diferencia de los px que 
+    son unidades absolutas y equivale tambien a porcentajes, en este caso cubre el 100% de la pantalla*/
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(foto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+     
+}
+.container-registro{
+    width: 90%;
+    height: 9vh;
+    display: flex;
+    justify-content: space-around;/*crea espacio entre los elementos*/
+    transition: all .5s ease-out; /*efecto de transicion de los elementos*/
+}
+.container-ingreso{
+    width: 90%;
+    height: 9vh;
+    display: flex;
+    justify-content: space-around;/*crea espacio entre los elementos*/
+    transition: all .5s ease-out; /*efecto de transicion de los elementos*/
+}
+.bienvenido{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.mensaje{
+    padding: 1rem;
+}
+.mensaje h2{
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+.mensaje button{
+    padding: 1rem;
+    font-weight: 400;
+    background-color: blue;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: white;
+}
