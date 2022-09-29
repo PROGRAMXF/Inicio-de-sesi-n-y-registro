@@ -25,9 +25,22 @@ body{
     justify-content: space-around;/*crea espacio entre los elementos*/
     transition: all .5s ease-out; /*efecto de transicion de los elementos*/
 }
+.boton-registro{
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222;
+}
 .container{
     width: 90%;
-    height: 110vh;
+    height: 150vh;
     display: flex;
     justify-content: space-around;/*crea espacio entre los elementos*/
     transition: all .5s ease-out; /*efecto de transicion de los elementos*/
@@ -38,6 +51,7 @@ body{
     text-align: center;
 }
 .mensaje{
+    
     padding: 1rem;
 }
 .mensaje h2{
@@ -132,7 +146,7 @@ body{
 }
 .container-ingreso.active{
     opacity: 1;
-    visibility: hidden;
+    visibility: visible;
 }
 .container-registro.active{
     opacity: 0;
