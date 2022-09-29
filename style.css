@@ -2,7 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-size: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     height: 100vh;/*vh (altura del dispositivo)son unidades relativas a diferencia de los px que 
@@ -20,14 +20,14 @@ body{
 }
 .container-registro{
     width: 90%;
-    height: 9vh;
+    height: 110vh;
     display: flex;
     justify-content: space-around;/*crea espacio entre los elementos*/
     transition: all .5s ease-out; /*efecto de transicion de los elementos*/
 }
-.container-ingreso{
+.container{
     width: 90%;
-    height: 9vh;
+    height: 110vh;
     display: flex;
     justify-content: space-around;/*crea espacio entre los elementos*/
     transition: all .5s ease-out; /*efecto de transicion de los elementos*/
@@ -47,7 +47,7 @@ body{
 .mensaje button{
     padding: 1rem;
     font-weight: 400;
-    background-color: blue;
+    background-color:rgba(59, 38, 38, 0.602) ;
     border-radius: 2rem;
     border: none;
     outline: none;
@@ -56,4 +56,85 @@ body{
     margin-top: 2rem;
     transition: all .3s ease-in;
     color: white;
+}
+.mensaje button:hover{/*hover: efecto sobre el boton, pasa de cursor a manito y cambia el boton cuando se pasa por el*/
+    background-color: black;
+
+}
+.formulario{
+    width: 350px;
+    padding: 5rem;
+    margin: 2rem;
+    background-color: rgba(59, 38, 38, 0.602);
+    text-align: center;
+}
+.crear-cuenta{
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+}
+.iconos{
+    width: 200px;
+    display:flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.border-icon{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: solid thin white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+}
+.border-icon:hover{
+    background-color: rgb(43, 14, 70);
+    cursor: pointer;
+}
+.cuenta-gratis{
+    padding: 2rem 0;
+}
+.formulario input{
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom:  white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: white;
+}
+.formulario input[type="button"]{
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222;
+}
+.container-ingreso{ /*estas tres propiedades hacen desaparecer el formulario*/
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.container-ingreso.active{
+    opacity: 1;
+    visibility: hidden;
+}
+.container-registro.active{
+    opacity: 0;
+    visibility: hidden;
 }
